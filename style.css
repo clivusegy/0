@@ -83,40 +83,47 @@ body {
 .s18 { top: 35%;  left: 77%;  width: 58px; transform: rotate(13deg); }
 
 @media (max-width: 480px) {
-  /* Reflow the collage for narrow screens: more stickers than desktop
-     hides, but repositioned into a ring that hugs the top row, bottom
-     row, and side edges — leaving the centered logo/tagline untouched.
-     s5, s10, s11, s15, s17, s18 stay hidden (s10/s11 in particular sit
-     directly above/below the logo on desktop and would overlap it here). */
-  .s5, .s10, .s11, .s15, .s17, .s18 {
-    display: none;
-  }
+  /* Every sticker is in play here — the only horizontal gap kept clear
+     is the logo/tagline's own row (band 4). Everywhere else fills in
+     edge-to-edge across seven tightly-spaced vertical bands. */
 
   .hero-sticker {
-    width: 38px; /* base size; each sticker below fine-tunes slightly */
+    width: 36px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
   }
 
-  /* top row */
-  .s1 { top: 3%;  left: 6%;   width: 40px; transform: rotate(-12deg); }
-  .s2 { top: 2%;  left: 32%;  width: 34px; transform: rotate(9deg); }
-  .s3 { top: 2%;  right: 32%; width: 36px; transform: rotate(-8deg); }
-  .s4 { top: 3%;  right: 6%;  width: 40px; transform: rotate(14deg); }
+  /* band 1 — top edge */
+  .s1 { top: 2%; left: 5%;   width: 38px; transform: rotate(-12deg); }
+  .s2 { top: 2%; left: 30%;  width: 34px; transform: rotate(9deg); }
+  .s3 { top: 2%; right: 30%; width: 34px; transform: rotate(-8deg); }
+  .s4 { top: 2%; right: 5%;  width: 38px; transform: rotate(14deg); }
 
-  /* upper-mid, tucked close to the side edges */
-  .s6 { top: 20%; left: 4%;  width: 32px; transform: rotate(11deg); }
-  .s7 { top: 20%; right: 4%; width: 34px; transform: rotate(-13deg); }
+  /* band 2 */
+  .s6  { top: 14%; left: 3%;   width: 32px; transform: rotate(11deg); }
+  .s17 { top: 15%; left: 24%;  width: 30px; transform: rotate(-7deg); }
+  .s18 { top: 15%; right: 24%; width: 30px; transform: rotate(8deg); }
+  .s7  { top: 14%; right: 3%;  width: 32px; transform: rotate(-13deg); }
 
-  /* mid-height, hugging the far left/right edges */
-  .s8 { top: 46%; left: 3%;  width: 40px; transform: rotate(-16deg); }
-  .s9 { top: 46%; right: 3%; width: 40px; transform: rotate(18deg); }
+  /* band 3 */
+  .s15 { top: 27%; left: 10%;  width: 34px; transform: rotate(6deg); }
+  .s11 { top: 27%; right: 10%; width: 34px; transform: rotate(-9deg); }
 
-  /* lower-mid, tucked close to the side edges */
-  .s12 { bottom: 20%; left: 4%;  width: 34px; transform: rotate(13deg); }
-  .s13 { bottom: 20%; right: 4%; width: 32px; transform: rotate(-11deg); }
+  /* band 4 — flanks the logo row; stays tight to the edges only */
+  .s8 { top: 46%; left: 2%;  width: 40px; transform: rotate(-16deg); }
+  .s9 { top: 46%; right: 2%; width: 40px; transform: rotate(18deg); }
 
-  /* bottom row */
-  .s14 { bottom: 3%; left: 6%;  width: 40px; transform: rotate(-14deg); }
-  .s16 { bottom: 3%; right: 6%; width: 40px; transform: rotate(-10deg); }
+  /* band 5 */
+  .s5  { top: 62%; left: 4%;  width: 32px; transform: rotate(-9deg); }
+  .s10 { top: 62%; right: 4%; width: 32px; transform: rotate(10deg); }
+
+  /* band 6 */
+  .s12 { bottom: 18%; left: 4%;  width: 34px; transform: rotate(13deg); }
+  .s13 { bottom: 18%; right: 4%; width: 32px; transform: rotate(-11deg); }
+
+  /* band 7 — bottom edge */
+  .s14 { bottom: 2%; left: 5%;  width: 38px; transform: rotate(-14deg); }
+  .s16 { bottom: 2%; right: 5%; width: 38px; transform: rotate(-10deg); }
 }
 
 .hero-brand {
