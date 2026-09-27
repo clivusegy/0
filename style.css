@@ -83,13 +83,40 @@ body {
 .s18 { top: 35%;  left: 77%;  width: 58px; transform: rotate(13deg); }
 
 @media (max-width: 480px) {
-  /* keep s1, s4, s8, s9, s14, s16 visible; hide the rest */
-  .s2, .s3, .s5, .s6, .s7, .s10, .s11, .s12, .s13, .s15, .s17, .s18 {
+  /* Reflow the collage for narrow screens: more stickers than desktop
+     hides, but repositioned into a ring that hugs the top row, bottom
+     row, and side edges — leaving the centered logo/tagline untouched.
+     s5, s10, s11, s15, s17, s18 stay hidden (s10/s11 in particular sit
+     directly above/below the logo on desktop and would overlap it here). */
+  .s5, .s10, .s11, .s15, .s17, .s18 {
     display: none;
   }
+
   .hero-sticker {
-    width: 42px; /* shrink the ones that remain so they fit better */
+    width: 38px; /* base size; each sticker below fine-tunes slightly */
   }
+
+  /* top row */
+  .s1 { top: 3%;  left: 6%;   width: 40px; transform: rotate(-12deg); }
+  .s2 { top: 2%;  left: 32%;  width: 34px; transform: rotate(9deg); }
+  .s3 { top: 2%;  right: 32%; width: 36px; transform: rotate(-8deg); }
+  .s4 { top: 3%;  right: 6%;  width: 40px; transform: rotate(14deg); }
+
+  /* upper-mid, tucked close to the side edges */
+  .s6 { top: 20%; left: 4%;  width: 32px; transform: rotate(11deg); }
+  .s7 { top: 20%; right: 4%; width: 34px; transform: rotate(-13deg); }
+
+  /* mid-height, hugging the far left/right edges */
+  .s8 { top: 46%; left: 3%;  width: 40px; transform: rotate(-16deg); }
+  .s9 { top: 46%; right: 3%; width: 40px; transform: rotate(18deg); }
+
+  /* lower-mid, tucked close to the side edges */
+  .s12 { bottom: 20%; left: 4%;  width: 34px; transform: rotate(13deg); }
+  .s13 { bottom: 20%; right: 4%; width: 32px; transform: rotate(-11deg); }
+
+  /* bottom row */
+  .s14 { bottom: 3%; left: 6%;  width: 40px; transform: rotate(-14deg); }
+  .s16 { bottom: 3%; right: 6%; width: 40px; transform: rotate(-10deg); }
 }
 
 .hero-brand {
