@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLIVUS — Stickers & More</title>
+  <link rel="icon" type="image/png" href="images/clivus.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,600;1,500&family=Inter:wght@400;500;600&family=Permanent+Marker&display=swap" rel="stylesheet" />
+<link rel="stylesheet"  href="style.css"/>
+</head>
+<body>
+
+<header class="hero">
+<div class="hero-decor" aria-hidden="true">
+  <!-- top row -->
+  <img src="images/1-percent.png"                  class="hero-sticker s1"  alt="" loading="lazy" decoding="async" width="65" height="65" />
+  <img src="images/egypt/6.png"                     class="hero-sticker s2"  alt="" loading="lazy" decoding="async" width="58" height="58" />
+  <img src="images/I Love You 3000 Sticker.png"     class="hero-sticker s3"  alt="" loading="lazy" decoding="async" width="62" height="62" />
+  <img src="images/Fck.png"                         class="hero-sticker s4"  alt="" loading="lazy" decoding="async" width="65" height="65" />
+  <img src="images/Nokia surgeons.png"              class="hero-sticker s5"  alt="" loading="lazy" decoding="async" width="55" height="55" />
+
+  <!-- upper-mid, flanking the lamp figure -->
+  <img src="images/ana abajora.png"                class="hero-sticker s6"  alt="" loading="lazy" decoding="async" width="46" height="46" />
+  <img src="images/بالطو.png"                        class="hero-sticker s7"  alt="" loading="lazy" decoding="async" width="60" height="60" />
+
+  <!-- side strips, mid-height -->
+  <img src="images/batman/4.png"                    class="hero-sticker s8"  alt="" loading="lazy" decoding="async" width="65" height="65" />
+  <img src="images/cam.png"                         class="hero-sticker s9"  alt="" loading="lazy" decoding="async" width="65" height="65" />
+
+  <!-- above/below logo, center column -->
+  <img src="images/فيروز.png"                        class="hero-sticker s10" alt="" loading="lazy" decoding="async" width="65" height="65" />
+  <img src="images/wasted.png"                      class="hero-sticker s11" alt="" loading="lazy" decoding="async" width="65" height="65" />
+
+  <!-- lower-mid -->
+  <img src="images/Mario.png"                  class="hero-sticker s12" alt="" loading="lazy" decoding="async" width="60" height="60" />
+  <img src="images/Doodle.png"                   class="hero-sticker s13" alt="" loading="lazy" decoding="async" width="60" height="60" />
+
+  <!-- bottom row -->
+  <img src="images/Sonic-removebg-preview.png"                 class="hero-sticker s14" alt="" loading="lazy" decoding="async" width="62" height="62" />
+  <img src="images/Mario-removebg-preview.png"                         class="hero-sticker s15" alt="" loading="lazy" decoding="async" width="58" height="58" />
+  <img src="images/bullshiy.png"                      class="hero-sticker s16" alt="" loading="lazy" decoding="async" width="62" height="62" />
+  <img src="images/spider/4.png"      class="hero-sticker s17" alt="" loading="lazy" decoding="async" width="60" height="60" />
+  <img src="images/tulips.png"   class="hero-sticker s18" alt="" loading="lazy" decoding="async" width="58" height="58" />
+</div>
+  <div class="hero-brand">
+    <img src="images/loogo.png" alt="CLIVUS logo" class="hero-logo" decoding="async" fetchpriority="high" />
+    <p class="hero-tagline">Stickers &amp; More</p>
+  </div>
+</header>
+
+  <main>
+    <section class="stickers-section">
+      <button type="button" class="section-heading-btn" id="stickersToggle" aria-expanded="false" aria-controls="stickerChoices">
+        <span class="section-heading">Stickers</span>
+        <span class="toggle-arrow" aria-hidden="true">&#9662;</span>
+      </button>
+
+            <div class="sticker-choices" id="stickerChoices" hidden>
+        <a href="single-stickers.html" class="sticker-card">
+          <div class="sticker-card-art single-art" aria-hidden="true">
+            <span class="die-cut"></span>
+          </div>
+          <span class="sticker-card-label">Single Stickers</span>
+          <span class="sticker-card-desc">One design, one sticker</span>
+        </a>
+
+        <a href="sheet-stickers.html" class="sticker-card">
+          <div class="sticker-card-art sheet-art" aria-hidden="true">
+            <span class="sheet-line"></span>
+            <span class="sheet-line"></span>
+            <span class="sheet-line"></span>
+          </div>
+          <span class="sticker-card-label">Sheet Stickers</span>
+          <span class="sticker-card-desc">Multiple designs per sheet</span>
+        </a>
+
+                <div class="customize-wrap">
+          <button type="button" class="sticker-card" id="customizeToggle" aria-expanded="false" aria-controls="customizeInfo">
+            <div class="sticker-card-art custom-art" aria-hidden="true">
+              <span class="custom-icon">&#9998;</span>
+            </div>
+            <span class="sticker-card-label">Customise</span>
+            <span class="sticker-card-desc">Design your own sticker</span>
+          </button>
+
+          <div class="customize-info" id="customizeInfo" hidden>
+        <p>DM for more info — reach us on the links below</p>
+        <div class="social-links">
+          <a href="https://facebook.com/share/185Q5qSgAQ/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.06 5.66 21.2 10.44 21.95V14.9H7.9v-2.84h2.54v-2.17c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.84h2.78l-.44 2.84h-2.34v7.05C18.34 21.2 22 17.06 22 12.06z"/></svg>
+          </a>
+          <a href="https://instagram.com/clivusegy?stkn=ZHduMHpzN2gxanlu&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.94.01 9.28 0 12 0zm0 5a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm7.25-.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z" transform="translate(0 2)"/></svg>
+          </a>
+          <a href="https://wa.me/+201553283074" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.14.82.84-3.06-.2-.31a8.2 8.2 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.21-8.25 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.49-.41-.42-.56-.43-.15-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.86-.87 2.09s.89 2.42 1.01 2.59c.13.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.19-.06-.11-.23-.17-.48-.29z"/></svg>
+                   </a>
+        </div>
+      </div>
+        </div>
+    </section>
+  </main>
+
+ <footer class="site-footer">
+    <div class="social-links">
+      <a href="https://facebook.com/share/185Q5qSgAQ/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.06 5.66 21.2 10.44 21.95V14.9H7.9v-2.84h2.54v-2.17c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.84h2.78l-.44 2.84h-2.34v7.05C18.34 21.2 22 17.06 22 12.06z"/></svg>
+      </a>
+      <a href="https://instagram.com/clivusegy?stkn=ZHduMHpzN2gxanlu&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.94.01 9.28 0 12 0zm0 5a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm7.25-.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z" transform="translate(0 2)"/></svg>
+      </a>
+      <a href="https://wa.me/+201553283074" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.14.82.84-3.06-.2-.31a8.2 8.2 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.21-8.25 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.49-.41-.42-.56-.43-.15-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.86-.87 2.09s.89 2.42 1.01 2.59c.13.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.19-.06-.11-.23-.17-.48-.29z"/></svg>
+      </a>
+    </div>
+    <p>&copy; 2026 CLIVUS Stickers &amp; More</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

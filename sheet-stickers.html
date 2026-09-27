@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sheet Stickers — CLIVUS</title>
+  <link rel="icon" type="image/png" href="images/clivus.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,600;1,500&family=Inter:wght@400;500;600&family=Permanent+Marker&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,600;1,500&family=Inter:wght@400;500;600&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style-sheet.css" />
+</head>
+<body>
+
+  <header class="hero hero--compact">
+    <a href="index.html" class="hero-logo-link">
+      <img src="images/loogo.png" alt="CLIVUS logo" class="hero-logo hero-logo--small" />
+    </a>
+    <p class="hero-tagline">Stickers &amp; More</p>
+  </header>
+
+  <main>
+    <section class="catalog-section">
+      <a href="index.html" class="back-link">&larr; HOME</a>
+      <h1 class="section-heading">Sheet Stickers</h1>
+      <p class="section-sub">ordering from site is under maintenance
+        to order please contact us on our social media pages or whatsapp number down below.</p>
+
+      <div class="search-bar">
+        <input type="text" id="sheetSearch" placeholder="Search sheets..." onkeyup="filterSheets()" />
+      </div>
+
+      <!-- Count Display -->
+      <p id="sheetCount" style="color:#ffffff; font-size: 1.1rem; font-weight: 600; margin-top: 0.5rem;"></p>
+
+      <div class="product-grid product-grid--sheets" id="sheetGrid">
+        <!-- cards are generated from sheets-data.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="social-links">
+      <a href="https://facebook.com/share/185Q5qSgAQ/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.06 5.66 21.2 10.44 21.95V14.9H7.9v-2.84h2.54v-2.17c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.84h2.78l-.44 2.84h-2.34v7.05C18.34 21.2 22 17.06 22 12.06z"/></svg>
+      </a>
+      <a href="https://instagram.com/clivusegy?stkn=ZHduMHpzN2gxanlu&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.94.01 9.28 0 12 0zm0 5a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm7.25-.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z" transform="translate(0 2)"/></svg>
+      </a>
+      <a href="https://wa.me/+201553283074" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.14.82.84-3.06-.2-.31a8.2 8.2 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.21-8.25 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.49-.41-.42-.56-.43-.15-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.86-.87 2.09s.89 2.42 1.01 2.59c.13.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.19-.06-.11-.23-.17-.48-.29z"/></svg>
+      </a>
+    </div>
+    <p>&copy; 2026 CLIVUS Stickers &amp; More</p>
+  </footer>
+
+  <script src="sheets-data.js"></script>
+  <script>
+    // Fisher-Yates Shuffle Function
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function renderSheets(list) {
+      const grid = document.getElementById("sheetGrid");
+      grid.innerHTML = "";
+
+      // Update total count
+      const countElement = document.getElementById("sheetCount");
+      if (countElement) {
+        countElement.textContent = `Total Sheets: ${list.length}`;
+      }
+
+      list.forEach((sheet) => {
+        const card = document.createElement("a");
+        card.href = `sheet-detail.html?id=${encodeURIComponent(sheet.id)}`;
+        card.className = "product-card product-card--sheet";
+
+        card.innerHTML = `
+          <img src="${sheet.mainImage}" alt="${sheet.name}" class="product-photo product-photo--large" />
+          <h3 class="product-name">${sheet.name}</h3>
+          <p class="product-price">${sheet.price}</p>
+          <p class="product-card-desc">${sheet.contents.length} designs on this sheet</p>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterSheets() {
+      const query = document.getElementById("sheetSearch").value.trim().toLowerCase();
+      const filtered = currentSheets.filter((s) => s.name.toLowerCase().includes(query));
+      renderSheets(filtered);
+    }
+
+    // Shuffle array copy on load and render once
+    const currentSheets = shuffleArray([...SHEETS]);
+    renderSheets(currentSheets);
+  </script>
+</body>
+</html>

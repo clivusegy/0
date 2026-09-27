@@ -1,0 +1,443 @@
+/* ===== CLIVUS — base tokens ===== */
+:root {
+  --navy: #1a2f42;
+  --teal: #6b98a0;
+  --teal-dark: #3a5a63;
+  --cream: #e8e4d9;
+  --charcoal: #2c2f36;
+
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--navy);
+  background: var(--charcoal);
+}
+
+/* ===== Hero ===== */
+.hero {
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  text-align: left;
+  min-height: 40vh;
+}
+
+.hero-brand {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.hero-logo {
+  width: 150px;
+  max-width: 40vw;
+  height: auto;
+  flex-shrink: 0;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.25));
+}
+.hero-tagline {
+  margin-left: -15px; /* increase this number until it looks right */
+}
+.hero-tagline {
+  font-family: "Permanent Marker", cursive;
+  font-style: normal;
+  color: var(--teal-dark);
+  letter-spacing: 0.01em;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  max-width: 300px;
+}
+/* ===== Compact hero (subpages) ===== */
+.hero--compact {
+  padding: 2.5rem 1.5rem 2rem;
+}
+
+.hero-logo--small {
+  width: 180px;
+}
+/* ===== Stickers section ===== */
+.stickers-section {
+  background: var(--charcoal);
+  padding: 3.5rem 1.5rem 4.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-heading-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.25rem;
+  margin: 0 auto 2.5rem;
+}
+
+.section-heading {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--cream);
+}
+
+.section-sub {
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+  font-size: 1.9rem;
+  color: #d64545;
+  margin: 0.5rem 0 0;
+  transform: rotate(-2deg);
+  display: inline-block;
+}
+
+.toggle-arrow {
+  color: var(--teal);
+  font-size: 1.25rem;
+  transition: transform 0.25s ease;
+}
+
+.section-heading-btn[aria-expanded="true"] .toggle-arrow {
+  transform: rotate(180deg);
+}
+
+.section-heading-btn:hover .section-heading,
+.section-heading-btn:focus-visible .section-heading {
+  color: var(--teal);
+}
+
+.sticker-choices {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 720px;
+  margin: 0 auto;
+  animation: reveal 0.35s ease;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sticker-card {
+  background: var(--cream);
+  border-radius: 12px;
+  padding: 2rem 1.75rem;
+  width: 260px;
+  text-decoration: none;
+  color: var(--navy);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid transparent;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.sticker-card:hover,
+.sticker-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: var(--teal);
+}
+
+.sticker-card-art {
+  width: 88px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+/* die-cut circle motif for Single Stickers */
+.single-art .die-cut {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--teal);
+  border: 3px dashed var(--navy);
+}
+
+/* sheet lines motif for Sheet Stickers */
+.sheet-art {
+  flex-direction: column;
+  gap: 8px;
+  background: var(--teal);
+  border-radius: 8px;
+  padding: 10px;
+  width: 72px;
+  height: 72px;
+}
+
+.sheet-line {
+  display: block;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--cream);
+}
+
+.sheet-line:nth-child(1) { width: 100%; }
+.sheet-line:nth-child(2) { width: 70%; }
+.sheet-line:nth-child(3) { width: 85%; }
+
+.sticker-card-label {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.sticker-card-desc {
+  font-size: 0.875rem;
+  color: var(--teal-dark);
+}
+
+/* ===== Compact hero (subpages) ===== */
+.hero--compact {
+  padding: 2.5rem 1.5rem 2rem;
+}
+
+
+
+.hero-logo-link {
+  display: inline-block;
+  line-height: 0;
+}
+
+/* ===== Catalog / product pages ===== */
+
+
+.catalog-section {
+  background: var(--charcoal);
+  padding: 2.5rem 1.5rem 4.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--teal);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  color: var(--cream);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  width: 92%;
+  max-width: 1400px;
+  margin: 2.5rem 0 0;
+}
+.product-card {
+  background: var(--cream);
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  border: 2px solid transparent;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.product-card:hover,
+.product-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: var(--teal);
+}
+
+.product-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  border: 2px solid var(--navy);
+  margin-bottom: 0;
+  object-fit: contain;
+  background: var(--cream);
+}
+
+/* placeholder-only styling, for cards still using the empty div */
+div.product-photo {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--teal),
+    var(--teal) 10px,
+    var(--teal-dark) 10px,
+    var(--teal-dark) 20px
+  );
+}
+
+.product-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+  color: var(--navy);
+}
+
+.product-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--teal-dark);
+  margin: 0;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: var(--cream);
+  opacity: 0.7;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.price-new {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+/* ===== Search bar ===== */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 340px;
+  padding: 0.7rem 1.1rem;
+  border-radius: 999px;
+  border: 2px solid var(--teal);
+  background: var(--cream);
+  color: var(--navy);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-bar input::placeholder {
+  color: var(--teal-dark);
+  opacity: 0.7;
+}
+
+.search-bar input:focus {
+  border-color: var(--cream);
+  box-shadow: 0 0 0 3px rgba(107, 152, 160, 0.4);
+}
+
+/* ===== Social icons ===== */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(232, 228, 217, 0.08);
+  color: var(--teal);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social-icon:hover,
+.social-icon:focus-visible {
+  background: var(--teal);
+  color: var(--charcoal);
+  transform: translateY(-2px);
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: var(--charcoal);
+  color: var(--teal);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(107, 152, 160, 0.2);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 3rem 1.25rem;
+    min-height: 30vh;
+  }
+  .hero-brand {
+    gap: 1rem;
+  }
+  .hero-logo {
+    width: 100px;
+  }
+  .hero-tagline {
+    font-size: 1.1rem; /* shrink a bit so it fits one line on narrow phones */
+    max-width: none;
+    white-space: nowrap;
+  }
+  .section-heading {
+    font-size: 2.25rem;
+  }
+  .sticker-card {
+    width: 100%;
+    max-width: 300px;
+  }
+   .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 1rem;
+  }
+}
+  
